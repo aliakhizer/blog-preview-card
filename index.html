@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>git init
+      :root {
+        --primary: hsl(47, 88%, 63%);
+        --secondary: black;
+      }
+
+      body {
+        background-color: var(--primary);
+        font-family: "Figtree", sans-serif;
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+        border-radius: 14px;
+      }
+      .card {
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 20px;
+        max-width: 320px;
+        box-shadow: 10px 10px black;
+      }
+      .card__info-header {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+        gap: 12px;
+        margin-top: 20px;
+        margin-bottom: 18px;
+        font-size: 14px;
+      }
+      .card__info-pill {
+        font-weight: 800;
+        background-color: var(--primary);
+        padding: 6px 12px;
+        border-radius: 4px;
+      }
+      .card__info-title {
+        font-size: 24px;
+        font-weight: 800;
+      }
+      .card__info-subtitle {
+        color: hsl(0, 0%, 50%);
+        margin-bottom: 18px;
+      }
+      .card__info-profile {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+      .card__info-profile-title {
+        font-weight: 800;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="card">
+      <div class="card__info">
+        <header class="card__info-header">
+          <span class="card__info-pill"> learning</span>
+          <span class="card__info-date"> Published 21 Dec 2023</span>
+        </header>
+
+        <h1 class="card__info-title">HTML & CSS foundations</h1>
+        <p class="card__info-subtitle">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+
+        <div class="card__info-profile">
+          <img
+            src="assets/images/image-avatar.webp"
+            alt="greg"
+            class="card__info-profile-img"
+          />
+          <span class="card__info-profile-title">Greg Hooper</span>
+        </div>
+      </div>
+      <img
+        src="assets/images/illustration-article.svg"
+        alt="notebook"
+        class="card__img"
+      />
+    </section>
+  </body>
+</html>
